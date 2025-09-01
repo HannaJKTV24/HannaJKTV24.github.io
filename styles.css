@@ -9,6 +9,8 @@
 	width: 1380px;
 	margin: auto;
 	background: url('img/img.webp') center/cover no-repeat;
+	/* filter: blur(8px); */
+
 }
 
 header {
