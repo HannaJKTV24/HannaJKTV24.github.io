@@ -8,20 +8,26 @@
 .wrapper {
 	width: 1380px;
 	margin: auto;
+	background: url('img/me.jpg') center/cover no-repeat;
+}
+
+header {
+	padding: 20px 70px;
 }
 
 header p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	text-align: justify;
+	color: white;
 	/* width: 600px; */
 	
 }
 
 .container{
 	min-height: 800px;
-	background: url('img/me.jpg') center/cover no-repeat;
-
+	padding-top: 120px;
+	
 }
 
 .container h3 {
