@@ -104,4 +104,27 @@ function move() {
     else if (direction == 'y-') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y+1) + '-' + (coord_x))[0];
     }
+
+    // Проверки
+    // 1) new_unit не часть змейки
+    // 2) Змейка не ушла на границу поля
+    //console.log(new_unit);
+    if (!isSnakeUnit(new_unit) && new_unit !==undefined) {
+        // Добавляем новой части змейки
+        new_unit.setAttribute('class', new_unit.getAttribute('class') + ' snake-unit');
+        snake.push(new_unit);
+
+        // Проверяем, надо ли убрать хвост
+        if (!haveFood(new_unit)) {
+            // Находим хвост
+            var removed = snake.splice(0, 1)[0];
+            var classes = removed.getAttribute('class').split(' ');
+
+            // удаляем хвост
+            removed.setAttribute('class', classes[0] + ' ' + classes[1]);
+        }
+    }
+    else {
+        finishTheGame();
+    }
 }
