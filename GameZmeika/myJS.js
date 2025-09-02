@@ -26,19 +26,24 @@ function init() {
 // Функция генерации игрового поля
 
 function prepareGameField() {
-
+    //создаем таблицу
     var game_table = document.createElement('table');
     game_table.setAttribute('class', 'game-table');
-
+    //Генерация ячеек игровой таблицы
     for (var i=0; i<FIELD_SIZE_X; i++) {
-
+        // Создание строки
         var row = document.createElement('tr');
         row.className = 'game-table-row row-' + i;
 
-        for 
+        for (var j=0; j<FIELD_SIZE_Y; j++) {
+            //Создание ячейки
+            var cell = document.createElement('td');
+            cell.className = 'game-table-cell cell-' + i + '-' +j;
+            row.appendChild(cell);  //Добавление ячейки
+        }
+        game_table.appendChild(row); // Добавление строки
+    }
 
-    };
-        
-    
-    
+    document.getElementById('snake-field').appendChild(game_table); //Добавление таблицы
 }
+
