@@ -162,3 +162,28 @@ function haveFood(unit) {
     }
     return check;
 }
+
+// Создание еды
+function createFood() {
+    var foodCreated = false;
+
+    while (!foodCreated) {
+        // рандом
+        var food_x = Math.floor(Math.random() * FIELD_SIZE_X);
+        var food_y = Math.floor(Math.random() * FIELD_SIZE_Y);
+
+        var food_cell = document.getElementsByClassName('cell-' + food_y + '-' +food_x)[0];
+        var food_cell_classes = food_cell.getAttribute('class').split(' ');
+
+        // проверка на змейку
+        if (!food_cell_classes.includes('snake-unit')) {
+            var classes = '';
+            for (var i=0; i < food_cell_classes[i]; i++) {
+                classes += food_cell_classes[i] + ' ';
+            }
+
+            food_cell.setAttribute('class', classes + 'food-unit');
+            foodCreated = true;
+        }
+    }
+}
