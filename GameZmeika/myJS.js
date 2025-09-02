@@ -128,3 +128,37 @@ function move() {
         finishTheGame();
     }
 }
+
+/**
+ * Проверка на змейку
+ * @param unit
+ * @returns {boolean}
+ */
+function isSnakeUnit(unit) {
+    var check = false;
+
+    if (snake.includes(unit)) {
+        check = true;
+    }
+    return check;
+}
+
+/**
+ * Проверка на еду
+ * @param unit
+ * @returns {boolean}
+ */
+function haveFood(unit) {
+    var check = false;
+
+    var unit_classes = unit.getAttribute('class').split(' ');
+
+    // Если еда
+    if (unit_classes.includes('food-unit')) {
+        check = true;
+        createFood();
+
+        score++;
+    }
+    return check;
+}
