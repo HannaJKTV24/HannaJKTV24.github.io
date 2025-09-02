@@ -78,10 +78,30 @@ function respawn() {
     snake.push(snake_tail);
 }
 
-//
+// Движение змейки
 
 function move() {
     // console.log('move', direction);
-    //
-    var snake_head_classes = snake[snake.length -1].getAttribute('class').split('')
+    // Сборка классов
+    var snake_head_classes = snake[snake.length -1].getAttribute('class').split('');
+
+    // Сдвиг головы
+    var new_unit;
+    var snake_coords = snake_head_classes[1].split('-');
+    var start_coord_y = parseInt(snake_coords[1]);
+    var start_coord_x = parseInt(snake_coords[2]);
+
+    // Определяем новую точку
+    if (direction == 'x-') {
+        new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x - 1))[0];
+    }
+    else if (direction == 'x+') {
+        new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x + 1))[0];
+    }
+    else if (direction == 'y+') {
+        new_unit = document.getElementsByClassName('cell-' + (coord_y -1) + '-' + (coord_x))[0];
+    }
+    else if (direction == 'y-') {
+        new_unit = document.getElementsByClassName('cell-' + (coord_y+1) + '-' + (coord_x))[0];
+    }
 }
