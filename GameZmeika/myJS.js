@@ -47,3 +47,41 @@ function prepareGameField() {
     document.getElementById('snake-field').appendChild(game_table); //Добавление таблицы
 }
 
+// Старт игры 
+
+function startGame() {
+    gameIsRunning = true;
+    respawn(); //Создами змейку
+
+    snake_timer = setInterval(move, SNAKE_SPEED);
+    setTimeout(createFood, 500);
+}
+
+//  Функция расположения змкйки на игровом поле
+function respawn() {
+    // Змейка массив - td
+    // Стартовая длина змейки = 2
+
+    // Respawn змейки из центра
+    var start_coord_x = Math.floor(FIELD_SIZE_X / 2);
+    var start_coord_y = Math.floor(FIELD_SIZE_Y / 2);
+
+    // Голова змейки
+    var snake_head = document.getElementsByClassName('cell-' + start_coord_y + '-' + start_coord_x)[0];
+    snake_head.setAttribute('class', snake_tail.getAttribute('class') + ' snake-unit');
+
+    // Тело змейки
+    var snake_tail = document.getElementsByClassName('cell-' + (start_coord_y -1) + '-' + start_coord_x)[0];
+    snake_tail.setAttribute('class', snake_tail.getAttribute('class') + ' snake-unit');
+
+    snake.push(snake_head);
+    snake.push(snake_tail);
+}
+
+//
+
+function move() {
+    // console.log('move', direction);
+    //
+    var snake_head_classes = snake[snake.length -1].getAttribute('class').split('')
+}
