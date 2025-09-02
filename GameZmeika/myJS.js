@@ -217,3 +217,19 @@ function changeDirection(e) {
             break;
     }
 }
+
+// Функция завершения игры
+
+function finishTheGame() {
+    gameIsRunning = false;
+    clearInterval(snake_timer);
+    alert('' + score.toString());
+}
+
+// Новая игра
+function refreshGame() {
+    location.reload();
+}
+
+// Инициализация
+window.onabort = init;
