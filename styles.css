@@ -9,8 +9,6 @@
 	width: 1380px;
 	margin: auto;
 	background: url('img/img.webp') center/cover no-repeat;
-	/* filter: blur(8px); */
-
 }
 
 header {
@@ -36,14 +34,14 @@ header p {
 	text-align: center;
 	font-size: 50px;
 	font-family: Cambria, serif;
-	color: aliceblue;
+	color: rgb(13, 14, 14);
 }
 
 .container p {
 	text-align: center;
 	font-family: Georgia, serif;
 	font-size: 36px;
-	color: aliceblue;
+	color: rgb(15, 15, 16);
 }
 
 .my_projects {
