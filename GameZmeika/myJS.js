@@ -187,3 +187,33 @@ function createFood() {
         }
     }
 }
+
+/**
+ * Изменение направление движения змейки
+ * @param e - событие
+ */
+function changeDirection(e) {
+    console.log(e);
+    switch (e.keyCode) {
+        case 37: // клавиша в лево
+            if (direction != 'x+') {
+                direction = 'x-'
+            }
+            break;
+        case 38: // клавиша вверх
+            if (direction != 'y-') {
+                direction = 'y+'
+            }
+            break;
+        case 39: // клавиша вправо
+            if (direction != 'x-') {
+                direction = 'x+'
+            }
+            break;
+        case 40: // клавиша вниз
+            if (direction != 'y+') {
+                direction = 'y-'
+            }
+            break;
+    }
+}
