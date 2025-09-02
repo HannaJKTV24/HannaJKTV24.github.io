@@ -20,6 +20,25 @@ function init() {
     document.getElementById('snake-renew').addEventListener('click', refreshGame);
 
     //отслеживания клавиш клавиатуры
-    addEventListener('keydown', changeDirection);
+    addEventListener('keydown', changeDirection);  
+}
+
+// Функция генерации игрового поля
+
+function prepareGameField() {
+
+    var game_table = document.createElement('table');
+    game_table.setAttribute('class', 'game-table');
+
+    for (var i=0; i<FIELD_SIZE_X; i++) {
+
+        var row = document.createElement('tr');
+        row.className = 'game-table-row row-' + i;
+
+        for 
+
+    };
+        
+    
     
 }
