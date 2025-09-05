@@ -1,7 +1,7 @@
 //Глобальные переменные:
-var FIELD_SIZE_X = 20; //строки
-var FIELD_SIZE_Y = 20; //столбцы
-var SNAKE_SPEED = 300; //Интервал между перемещениями змейки
+var FIELD_SIZE_X = 25; //строки
+var FIELD_SIZE_Y = 25; //столбцы
+var SNAKE_SPEED = 200; //Интервал между перемещениями змейки
 var snake = []; //сама змейка
 var direction = 'y+'; // направление движения змейки 
 var gameIsRunning = false; //запущена ли игра
@@ -14,7 +14,7 @@ function init() {
 
     var wrap = document.getElementsByClassName('wrap')[0];
 
-    wrap.style.width = '400px';
+    wrap.style.width = '600px';
     //события кнопок Старт и Новая игра
     document.getElementById('snake-start').addEventListener('click', startGame);
     document.getElementById('snake-renew').addEventListener('click', refreshGame);
@@ -68,11 +68,11 @@ function respawn() {
 
     // Голова змейки
     var snake_head = document.getElementsByClassName('cell-' + start_coord_y + '-' + start_coord_x)[0];
-    snake_head.setAttribute('class', snake_tail.getAttribute('class') + ' snake-unit');
+    snake_head.setAttribute('class', snake_head.getAttribute('class') + ' snake-unit');
 
     // Тело змейки
     var snake_tail = document.getElementsByClassName('cell-' + (start_coord_y -1) + '-' + start_coord_x)[0];
-    snake_tail.setAttribute('class', snake_tail.getAttribute('class') + ' snake-unit');
+    snake_tail.setAttribute('class', snake_tail.getAttribute('class') + ' snake-unit snake-head');
 
     snake.push(snake_head);
     snake.push(snake_tail);
@@ -83,7 +83,7 @@ function respawn() {
 function move() {
     // console.log('move', direction);
     // Сборка классов
-    var snake_head_classes = snake[snake.length -1].getAttribute('class').split('');
+    var snake_head_classes = snake[snake.length -1].getAttribute('class').split(' ');
 
     // Сдвиг головы
     var new_unit;
@@ -93,16 +93,16 @@ function move() {
 
     // Определяем новую точку
     if (direction == 'x-') {
-        new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x - 1))[0];
+        new_unit = document.getElementsByClassName('cell-' + (start_coord_y) + '-' + (start_coord_x - 1))[0];
     }
     else if (direction == 'x+') {
-        new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x + 1))[0];
+        new_unit = document.getElementsByClassName('cell-' + (start_coord_y) + '-' + (start_coord_x + 1))[0];
     }
     else if (direction == 'y+') {
-        new_unit = document.getElementsByClassName('cell-' + (coord_y -1) + '-' + (coord_x))[0];
+        new_unit = document.getElementsByClassName('cell-' + (start_coord_y - 1) + '-' + (start_coord_x))[0];
     }
     else if (direction == 'y-') {
-        new_unit = document.getElementsByClassName('cell-' + (coord_y+1) + '-' + (coord_x))[0];
+        new_unit = document.getElementsByClassName('cell-' + (start_coord_y + 1) + '-' + (start_coord_x))[0];
     }
 
     // Проверки
@@ -110,8 +110,12 @@ function move() {
     // 2) Змейка не ушла на границу поля
     //console.log(new_unit);
     if (!isSnakeUnit(new_unit) && new_unit !==undefined) {
+        // удаляем класс snake-head с предыдущей головы
+        var old_head = snake[snake.length - 1];
+        old_head.classList.remove('snake-head');
         // Добавляем новой части змейки
-        new_unit.setAttribute('class', new_unit.getAttribute('class') + ' snake-unit');
+        new_unit.setAttribute('class', new_unit.getAttribute('class') + ' snake-unit snake-head');
+        // Добавляем новой голову змейки
         snake.push(new_unit);
 
         // Проверяем, надо ли убрать хвост
@@ -172,13 +176,13 @@ function createFood() {
         var food_x = Math.floor(Math.random() * FIELD_SIZE_X);
         var food_y = Math.floor(Math.random() * FIELD_SIZE_Y);
 
-        var food_cell = document.getElementsByClassName('cell-' + food_y + '-' +food_x)[0];
+        var food_cell = document.getElementsByClassName('cell-' + food_y + '-' + food_x)[0];
         var food_cell_classes = food_cell.getAttribute('class').split(' ');
 
         // проверка на змейку
         if (!food_cell_classes.includes('snake-unit')) {
             var classes = '';
-            for (var i=0; i < food_cell_classes[i]; i++) {
+            for (var i=0; i < food_cell_classes.length; i++) {
                 classes += food_cell_classes[i] + ' ';
             }
 
@@ -232,4 +236,4 @@ function refreshGame() {
 }
 
 // Инициализация
-window.onabort = init;
+window.onload = init;
