@@ -8,7 +8,7 @@
 .wrapper {
 	width: 1380px;
 	margin: auto;
-	background: url('img/img.webp') center/cover no-repeat;
+	background-image: linear-gradient(rgba(38, 38, 38, 0.6)), url('img/dow.jfif');
 }
 
 header {
@@ -26,22 +26,21 @@ header p {
 
 .container{
 	min-height: 800px;
-	padding-top: 120px;
-	
+	padding-top: 120px;	
 }
 
 .container h3 {
 	text-align: center;
 	font-size: 50px;
 	font-family: Cambria, serif;
-	color: rgb(13, 14, 14);
+	color: wheat;
 }
 
 .container p {
 	text-align: center;
 	font-family: Georgia, serif;
 	font-size: 36px;
-	color: rgb(15, 15, 16);
+	color: wheat;
 }
 
 .my_projects {
@@ -65,6 +64,10 @@ footer {
 	color: azure;
 	text-align: center;
 	padding-bottom: 45px;
+}
+
+footer a {
+	background: wheat;
 }
 
 
