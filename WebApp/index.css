@@ -1,0 +1,227 @@
+body{
+	background-color: white;
+}
+.all{
+	width: 1380px;
+	margin: auto;
+}
+nav{
+	font-family: Arial;
+	text-align: center;
+	float: left;
+	width: 1260px;
+	color: darkblue;
+}
+.aside_left{
+	font-family: Arial;
+	font-weight: bold;
+	float: left;
+	width: 140px;
+	height: 500px;
+	margin-right: 10px;
+}
+li{
+	margin-top: 10px;
+}
+.aside_right{
+	font-family: Times New Roman;
+	float: right;
+	text-align: justify;
+	width: 270px;
+	height: 555px;
+	color: darkblue;
+	margin: auto;
+}
+.aside_right h4{
+	font-family: Arial;
+	text-align: center;
+	font-size: 24px;
+	color: darkblue;
+	margin: auto;
+}
+.aside_right h5{
+	font-family: Arial;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	background-color: darkblue;
+}
+header{
+	text-align: center;
+	margin-top: 100px;
+}
+.img1{
+	width: 100px; /* Диаметр круга */
+    height: 100px; /* Диаметр круга */
+    border: 4px cyan inset; /* Цвет и толщина внешней обводки */
+    border-radius: 50%; /* Делает квадрат круглым */
+    background-color: transparent; /* Прозрачный фон */
+    box-sizing: border-box; /* Учитывает ширину границы в размерах элемента */
+    position: relative;
+	float: left;
+	margin-right: 20px;
+	margin-left: 70px;
+}
+.img2{
+	width: 100px; /* Диаметр круга */
+    height: 100px; /* Диаметр круга */
+    border: 4px cyan inset; /* Цвет и толщина внешней обводки */
+    border-radius: 50%; /* Делает квадрат круглым */
+    background-color: transparent; /* Прозрачный фон */
+    box-sizing: border-box; /* Учитывает ширину границы в размерах элемента */
+    position: relative;
+	float: left;
+	margin-right: 20px;
+}
+header h1{
+	font-size: 45px;
+	font-family: Arial;
+	width: 758px;
+	text-align: center;
+	float: left;
+	color: #FF3300;
+    text-shadow: 
+    	5px 5px 0px #6113a9,
+    	-2px 2px 0px #6113a9,
+    	2px -2px 0px #6113a9,
+    	-2px -2px 0px #6113a9;  
+}
+.img3{
+	width: 100px; /* Диаметр круга */
+    height: 100px; /* Диаметр круга */
+    border: 4px cyan inset; /* Цвет и толщина внешней обводки */
+    border-radius: 50%; /* Делает квадрат круглым */
+    background-color: transparent; /* Прозрачный фон */
+    box-sizing: border-box; /* Учитывает ширину границы в размерах элемента */
+    position: relative;
+	float: left;
+	margin-left: 20px;
+}
+.img4{
+	width: 100px; /* Диаметр круга */
+    height: 100px; /* Диаметр круга */
+    border: 4px cyan inset; /* Цвет и толщина внешней обводки */
+    border-radius: 50%; /* Делает квадрат круглым */
+    background-color: transparent; /* Прозрачный фон */
+    box-sizing: border-box; /* Учитывает ширину границы в размерах элемента */
+    position: relative;
+	float: left;
+	margin-left: 20px;
+	margin-right: 70px;
+}
+main{
+	float: left;
+	width: 950px;
+	margin-left: 10px;
+	font-size: 16px;
+	text-align: justify;
+}
+main img{
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+}
+.HTML5{
+	color: #d35400;
+	width: 70px;
+	height: 16px;
+	float: left;
+	margin: auto;
+	font-weight: bold;
+}
+.CSS{
+	color: blue;
+	width: 40px;
+	height: 16px;
+	float: left;
+	margin: auto;
+	font-weight: bold;
+}
+.BOOTSTRAP{
+	color: indigo;
+	width: 120px;
+	height: 16px;
+	float: left;
+	margin: auto;
+	font-weight: bold;
+}
+.ANGULARJS{
+	color: #e74c3c;
+	width: 85px;
+	height: 16px;
+	float: left;
+	margin: auto;
+	font-weight: bold;
+}
+h3{
+	font-family: Arial;
+	color: white;
+	background: linear-gradient(to top, red, darkblue, white);
+	width: 440px;
+	float: left;
+	text-align: center;
+	text-shadow: 
+    	-1px -1px 0px black,  
+    	1px -1px 0px black,
+    	-1px 1px 0px black,
+    	1px 1px 0px black;
+}
+.HTML5_p{
+	float: left;
+	font-size: 16px;
+}
+.first_main{
+	width: 440px;
+	height: 180px;
+	float: left;
+	margin-right: 30px;
+}
+.first_main a{
+	color: blue;
+}
+.second_main{
+	width: 440px;
+	height: 180px;
+	float: left;
+}
+.second_main a{
+	color: blue;
+}
+.third_main{
+	width: 440px;
+	height: 190px;
+	float: left;
+	margin-right: 30px;
+}
+.third_main a{
+	color: blue;
+}
+.fourt_main{
+	width: 440px;
+	height: 190px;
+	float: left;
+}
+.fourt_main a{
+	color: blue;
+}
+.footer_text{
+	width: 890px;
+	float: left;
+	border-top: 25px solid darkblue;
+	border-bottom: 25px solid darkblue;
+	border-left: 10px solid darkblue;
+	border-right: 10px solid darkblue;
+	color: darkblue;
+}
+footer{
+	margin-top: 40px;
+	font-family: Arial;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+	width: 1380px;;
+	color: darkblue;
+	font-size: 16px;
+	font-weight: bold;
+}
