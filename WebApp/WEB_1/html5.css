@@ -1,0 +1,154 @@
+body{ 
+	background-color: #3C3D37 ;
+ }
+
+.wrapper{
+		width: 1350px;
+		margin: auto;
+}
+
+header{
+	width: 1350px;
+	height: 180px;
+	background-color: #697565;
+}
+
+h1 {
+	font-family: Calibri;
+	font-size: 70px;
+	background: linear-gradient(to bottom, #181C14, #3C3D37, #FF6500, #3C3D37, #181C14);
+	background-clip: text;
+	color: transparent;
+	width: 1170px;	
+	text-align: center;
+	float: right;
+}
+
+nav{
+	position: fixed;
+	color: #ECDFCC;
+}
+nav li{
+	padding: 7px;
+	font-family: Bahnschrift;
+	margin: -10px;
+	
+}
+
+aside {
+	font-family: Calibri;
+	font-weight: bold;
+	float: left;
+	width: 140px;
+	height: 2404px;
+	background-color: #697565;
+	font-size: 20px;
+}
+.tap {
+	margin: -18px;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	padding: 20px;
+	margin: 20px;
+}
+
+main{
+	width: 1210px;
+	float: left;
+	margin: auto ;
+/*	height: 1500px;*/
+}
+
+.img1{
+	width:1155px ;
+	height: 301px;
+	padding: 0px;
+	margin: 10px;
+}
+
+.first{
+	background-color: #181C14;
+	color: #ECDFCC;
+	padding: 15px;
+	margin: auto;
+}
+
+.first h2{
+	font-family: Arial ;
+	font-size: 32px;
+	text-align: center;
+}
+.first .para{
+	font-size: 18px;
+	font-family: Calibri;
+}
+
+.first .all{
+	text-align: center;
+	font-size: 24px;
+	padding-left: 35px;
+	padding-right: 35px;
+	color: white;
+}
+
+.first li{
+	padding: 5px;
+	font-size: 18px;
+	font-family: Calibri;
+}
+.second{
+	background-color: #ECDFCC;
+	margin: auto;
+	padding: 19px;
+}
+
+.second h2{
+	font-family: Arial ;
+	font-size: 32px;
+	text-align: center;
+	color: #181C14;
+}
+
+.second h3{
+	width: 400px;
+	font-family: Calibri ;
+	font-size: 28px;
+	text-align: left;
+	padding-left: 50px;
+}
+
+.img2{
+	width: 400px ;
+	height: 350px;
+	float: right;
+	padding: 0px;
+	margin: 5px;
+}
+
+.second p{
+	font-family: Arial ;
+	font-size: 24px;
+	text-align: center;
+	padding: 15px;
+}
+
+.second li{
+	font-family: Arial ;
+	font-size: 18px;
+	text-align: left;
+	padding: 7px;
+}
+
+footer{ 
+	width: 1320px;
+	float: left;
+	background-color: #697565;
+	color: white;
+	font-family: Times New Roman  ;
+	font-size: 26px;
+	text-align: center;
+	padding: 15px;
+}
