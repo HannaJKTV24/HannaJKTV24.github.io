@@ -1,0 +1,139 @@
+.wrapper{
+	background: linear-gradient( to right, #EDDFE0, #F5F5F7, #B7B7B7, #705C53 );
+	width: 1380px;
+	margin: auto;
+
+}
+
+header {
+	width: 1380px;
+	height: 200px;
+/*	background: linear-gradient( to right, #EDDFE0, #F5F5F7, #B7B7B7, #705C53 );*/
+}
+
+h1{
+	width: 1100px;
+	float: left;
+	margin: 20px;
+	text-align: center;
+	font-size: 60px;
+	font-family: Arial;
+	background: linear-gradient(to bottom, #640D5F, #D91656, #EE66A6, #FFEB55, #EE66A6, #D91656, #640D5F );
+	background-clip: text;
+	color: transparent;
+}
+
+header img{
+	width: 200px;
+	height: 200px;
+	float: right;
+	margin: 20px;	
+}
+
+li { 
+	float: left;
+	padding: 20px;
+	width: 219px;
+	font-size: 25px;
+	font-family: Cambria;
+}
+
+main{
+	width: 1380px;
+/*	background: linear-gradient( to right, #EDDFE0, #F5F5F7, #B7B7B7, #705C53 );*/
+}
+
+.img{
+	width: 1380px;
+	height: 240px;
+}
+
+.img_1{
+	width: 300px;
+	height: 200px;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: auto;
+}
+
+.first h2{
+	font-size: 45px;
+	font-family: Bahnschrift;
+	color: #343131;
+	text-align: justify;
+	margin-left: 100px;
+}
+
+.first p{
+	text-align: justify;
+	font-size: 28px;
+	color: #1E201E;
+	font-family: Sitka;
+	margin: 25px;
+}
+
+.first .paragraph{ 
+	text-align: center;
+	font-size: 36px;
+	color: #021526;
+	font-family: Cambria;
+}
+
+.second h2{
+	text-align: center;
+	font-size: 45px;
+	font-family: Bahnschrift;
+	color: #102C57;
+}
+
+.second p{
+	text-align: justify;
+	font-size: 28px;
+	color: #1E201E;
+	font-family: Sitka;
+	margin: 25px;
+
+}
+
+.third img{
+	width: 1380px;
+	height: 300px;
+}
+
+.third h2{
+	font-size: 45px;
+	font-family: Bahnschrift;
+	text-align: left;
+	color: #343131;
+	margin-left: 100px;
+}
+
+.third p {
+	text-align: justify;
+	font-size: 28px;
+	color: #1E201E;
+	font-family: Sitka;
+	margin: 25px;
+}
+
+.third .paragraph_2{
+	font-size: 36px;
+	font-family: Cambria;
+	text-align: center;
+	color: #102C57;
+	padding: 20px;
+}
+
+footer img{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	font-size: 36px;
+	border: 1px solid black;
+	border-radius: 20%;
+/*	background: linear-gradient(to top, #543310, #F8F4E1, #74512D, #AF8F6F);*/
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding: 20px;
+}

@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+.wrapper {
+	width: 1380px;
+	margin: auto;
+	background-image: linear-gradient(rgba(38, 38, 38, 0.6)), url('img/dow.jfif');
+}
+
+header {
+	padding: 20px 70px;
+}
+
+header p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-align: justify;
+	color: white;
+	/* width: 600px; */
+	
+}
+
+.container{
+	min-height: 800px;
+	padding-top: 120px;	
+}
+
+.container h3 {
+	text-align: center;
+	font-size: 50px;
+	font-family: Cambria, serif;
+	color: wheat;
+}
+
+.container p {
+	text-align: center;
+	font-family: Georgia, serif;
+	font-size: 36px;
+	color: wheat;
+}
+
+.my_projects {
+	display: block;
+	left: 10px;
+	font-size: 32px;
+}
+
+.my_projects ul {
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+.my_projects a{
+	color: #ebf5f8;
+}
+
+footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	color: azure;
+	text-align: center;
+	padding-bottom: 45px;
+}
+
+footer a {
+	background: wheat;
+}
+
+
+

@@ -1,0 +1,195 @@
+body{
+	background: #C68FE6;
+}
+
+.wrapper{
+	width: 1380px;
+	margin: auto;
+}
+
+header{
+	width: 1380px;
+	background-image: url(Images/bootstrap_1.png);
+	height: 400px;
+}
+
+header li{
+	float: left;
+	width: 300px;
+	font-size: 24px;
+	font-family: Consolas;
+	color: white;
+	padding-top: 20px;
+}
+
+header li a{
+	color: white;
+}
+
+header h1{
+	padding-left: 160px;
+	font-size: 80px;
+	color: #ffffff;
+	font-family: Cambria;
+	padding-top: 160px;
+}
+
+main{
+	background: #FFF7F7;
+	width: 1215px;
+	margin-top: -48px;
+	padding-left: 125px;
+	padding-right: 40px;
+}
+
+.tap{
+	float: left;
+	position: fixed;	
+}
+
+.tap img{
+	width: 70px;
+	height: 70px;
+	margin-left: -100px;
+}
+
+.first {
+	width: 1215px;
+	padding-right: 40px;
+}
+
+.first h2{	
+	text-align: center;
+	font-size: 56px;
+	font-family: Segoe UI;
+	color: #1230AE;
+}
+
+.first p{
+	text-align: justify;
+	font-family: Arial;
+	font-size: 28px;
+	padding-bottom: 30px;
+}
+
+.first .para{
+	text-align: center;
+	font-family: Arial;
+	font-size: 32px;
+	color: #33372C;
+}
+
+.second{
+	width: 1215px;
+}
+
+.first img{
+	width: 1215px;
+}
+
+.second h2{
+	text-align: center;
+	font-size: 56px;
+	font-family: Segoe UI;
+	color: #1230AE;
+}
+
+.second ul{
+	text-align: justify;
+	font-family: Arial;
+	font-size: 28px;
+	float: left;
+	width: 580px;
+}
+
+.second li{
+	padding: 10px;
+}
+.second img{
+	float: right;
+	width: 570px;
+	height: 500px;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.third{
+	width: 1215px;
+}
+
+.third h2{
+	text-align: center;
+	font-size: 56px;
+	font-family: Segoe UI;
+	color: #1230AE;
+	width: 1215px;
+	padding-top: 50px;
+	width: 1215px;
+	height: 60px;
+	padding-top: 800px;
+	padding-bottom: 100px;
+
+}
+
+.third h3{
+	font-size: 40px;
+	font-family: Calibri;
+	color: #6C48C5;
+	text-align: justify;
+}
+
+.third li{
+	font-family: Arial;
+	font-size: 28px;
+	text-align: left;
+	color: #33372C;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.third img{
+	width: 1215px;
+	height: 400px;
+	padding-top: 30px;
+}
+
+.third ul{
+	padding-bottom: 50px;
+}
+footer{
+	width: 1380px;
+	background: #6C48C5;
+	margin-top: -40PX;
+}
+
+footer h3{
+	font-size: 40px;
+	font-family: Calibri;
+	color: #FFF7F7;
+	text-align: center;
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-shadow: 
+		-2px -2px 0px #C68FE6,  
+    	2px -2px 0px #C68FE6,
+    	-2px 2px 0px #C68FE6,
+    	2px 2px 0px #C68FE6;
+
+}
+
+footer li{
+	text-align: justify;
+	font-family: Arial;
+	font-size: 28px;
+	color: #ffffff;
+	padding: 20px;	
+}
+
+
+footer ul{
+	padding-bottom: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+}
